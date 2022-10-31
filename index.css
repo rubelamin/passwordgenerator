@@ -1,0 +1,86 @@
+body {
+    background-color: #1c1c1c;
+    font-family: 'Courier New', Courier, monospace;
+}
+.container {
+    background-color: #1F2937;
+    width: 40%;
+    margin: auto;
+    padding: 20px 30px;
+}
+h1 {
+    margin: 0;
+}
+.text-white {
+    color: white;
+}
+.text-green {
+    color: #4ADF86;
+}
+.text-body {
+    color: #D5D4D8;
+}
+button {
+    background-color: #10B981;
+    color: white;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+}
+hr {
+    height: 0;
+    border: 1px solid #2F3E53;
+}
+.password-box {
+    display: flex;
+    justify-content: space-around;
+}
+.password-box textarea {
+    background-color: #273549;
+    width: 100%;
+    margin: 5px;
+    text-align: center;
+    padding: 12px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    line-height: 2px;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
